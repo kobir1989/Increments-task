@@ -11,6 +11,13 @@ import immigrationIcon from './svg/immigrationIcon';
 import propartyIcon from './svg/propartyIcon';
 import coupleIcon from './svg/coupleIcon';
 import personsIcon from './svg/personsIcon';
+import quoteIcon from './svg/quoteIcon';
+import practiceIcon from './svg/practiceIcon';
+import accountCircle from './svg/accountCircle';
+import addAccount from './svg/addAccount';
+import logout from './svg/logout';
+import settings from './svg/settings';
+import myAccount from './svg/myAccount';
 
 export const IconsMap = {
   arrowBack,
@@ -26,4 +33,11 @@ export const IconsMap = {
   propartyIcon,
   coupleIcon,
   personsIcon,
+  quoteIcon,
+  practiceIcon,
+  addAccount,
+  accountCircle,
+  settings,
+  logout,
+  myAccount,
 };

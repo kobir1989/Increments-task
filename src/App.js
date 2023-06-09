@@ -1,5 +1,7 @@
-function App() {
-  return <div className='App'></div>;
-}
+import Home from './pages/Home';
+
+const App = () => {
+  return <Home />;
+};
 
 export default App;

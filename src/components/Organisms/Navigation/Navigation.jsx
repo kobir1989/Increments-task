@@ -1,4 +1,3 @@
-import styled from '@emotion/styled';
 import Icon from '../../Atoms/Icons/Icon';
 import MenuDropDown from './MenuDropDown';
 import {
@@ -12,22 +11,10 @@ import {
 import { useState } from 'react';
 import AvaterDropDown from './AvaterDropDown';
 
-const StyledNav = styled('nav')({
-  display: 'flex',
-  justifyContent: 'space-between',
-  alignItems: 'center',
-  background: '#FAFAFA',
-  padding: '0 3.18rem',
-  height: '3.75rem',
-  boxShadow: ' 0px 8px 16px rgba(0, 0, 0, 0.15)',
-  borderRadius: '4px',
-  position: 'relative',
-});
-
 const Navigation = () => {
   const [isCollapsed, setIsCollapsed] = useState(false);
   const [showMenuDropDown, setShowMenuDropDown] = useState(false);
-  const [showAvaterDropDown, setShowAvaterDropDown] = useState(true);
+  const [showAvaterDropDown, setShowAvaterDropDown] = useState(false);
 
   //menu drop down header
   const handleMenuDropDown = () => {
@@ -47,7 +34,20 @@ const Navigation = () => {
   };
   return (
     <ClickAwayListener onClickAway={handleCloseMenuDropDown}>
-      <StyledNav>
+      <Box
+        sx={{
+          display: 'flex',
+          justifyContent: 'space-between',
+          alignItems: 'center',
+          background: '#FAFAFA',
+          padding: '0 3.18rem',
+          height: '3.75rem',
+          boxShadow: ' 0px 8px 16px rgba(0, 0, 0, 0.15)',
+          borderRadius: '4px',
+          position: 'relative',
+          width: '100%',
+        }}
+      >
         <Stack direction='row' alignItems='center' gap='2.43rem'>
           <IconButton p={0} disableRipple onClick={handleMenuDropDown}>
             <Icon name='menuIcon' />
@@ -82,13 +82,19 @@ const Navigation = () => {
             />
           </Box>
         )}
-
         {showAvaterDropDown && (
-          <Box sx={{ position: 'absolute', top: '120%', right: '2rem' }}>
+          <Box
+            sx={{
+              position: 'absolute',
+              top: '120%',
+              right: '2rem',
+              zIndex: '1',
+            }}
+          >
             <AvaterDropDown showAvaterDropDown={showAvaterDropDown} />
           </Box>
         )}
-      </StyledNav>
+      </Box>
     </ClickAwayListener>
   );
 };

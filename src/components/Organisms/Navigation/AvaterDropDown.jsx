@@ -34,6 +34,7 @@ const AvaterDropDown = ({ showAvaterDropDown }) => {
           borderRadius: '0.75rem',
           boxShadow: '0px 4px 4px rgba(0, 0, 0, 0.25)',
           p: '1.87rem 1rem',
+          zIndex: 10,
           '&::before': {
             content: '""',
             position: 'absolute',

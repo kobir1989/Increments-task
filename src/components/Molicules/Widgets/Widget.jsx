@@ -2,23 +2,22 @@ import React from 'react';
 import { Box, Stack, Typography } from '@mui/material';
 import Icon from '../../Atoms/Icons/Icon';
 
-const Widget = ({ title, description }) => {
+const Widget = ({ title, description, iconName = 'callIcon' }) => {
   return (
     <Stack
       direction='row'
       gap='1.25rem'
       alignItems='center'
-      justifyContent='space-between'
       width='16.5rem'
       sx={(theme) => ({
-        boxShadow: '0px 0px 3px rgba(0, 0, 0, 0.25)',
+        filter: 'drop-shadow(0px 0px 10px #000000)',
         backgroundColor: theme.palette.primary.contrastText,
-        padding: '0.56rem',
+        padding: '0.76rem 1.56rem',
         borderRadius: '4px',
       })}
     >
       <Box>
-        <Icon name='callIcon' />
+        <Icon name={iconName} />
       </Box>
       <Box>
         <Typography variant='body1' fontWeight='400'>

@@ -31,6 +31,7 @@ export const typography = {
   h4: {
     fontSize: '1.084rem', // 17px
     lineHeight: '1.62rem',
+    fontWeight: '400',
     '@media (max-width: 600px)': {
       fontSize: '0.9rem',
       lineHeight: '1.75rem',
@@ -45,18 +46,6 @@ export const typography = {
     },
   },
 
-  // subtitle1: {
-  //   fontSize: '.875rem', // 14px
-  //   lineHeight: '1.125rem', // 18px
-  //   fontWeight: '500',
-  //   color: palette.text.primary,
-  // },
-  // subtitle2: {
-  //   fontSize: '.8125rem', // 13px
-  //   lineHeight: '1.0625rem', // 17px
-  //   fontWeight: '700',
-  //   color: palette.text.primary,
-  // },
   body1: {
     fontSize: '0.87rem', // 14px
     lineHeight: '1.31rem',

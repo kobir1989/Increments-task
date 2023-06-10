@@ -9,7 +9,7 @@ import videoIcon from './svg/videoIcon';
 import volunteer from './svg/volunteer';
 import immigrationIcon from './svg/immigrationIcon';
 import propartyIcon from './svg/propartyIcon';
-import coupleIcon from './svg/coupleIcon';
+import SupervisedUserCircleIcon from '@mui/icons-material/SupervisedUserCircle';
 import personsIcon from './svg/personsIcon';
 import quoteIcon from './svg/quoteIcon';
 import practiceIcon from './svg/practiceIcon';
@@ -29,6 +29,8 @@ import starIcon from './svg/starIcon';
 import checkedIcon from './svg/checkedIcon';
 import noteIcon from './svg/noteIcon';
 import houseIcon from './svg/houseIcon';
+import male from './svg/male';
+import female from './svg/female';
 
 export const IconsMap = {
   arrowBack,
@@ -42,7 +44,7 @@ export const IconsMap = {
   volunteer,
   immigrationIcon,
   propartyIcon,
-  coupleIcon,
+  coupleIcon: SupervisedUserCircleIcon,
   personsIcon,
   quoteIcon,
   practiceIcon,
@@ -62,4 +64,6 @@ export const IconsMap = {
   checkedIcon,
   noteIcon,
   houseIcon,
+  male,
+  female,
 };

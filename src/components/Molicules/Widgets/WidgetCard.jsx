@@ -7,6 +7,7 @@ const WidgetCard = ({
   title,
   description,
   background = '#FFEBE6',
+  iconColor,
 }) => {
   return (
     <Stack
@@ -32,7 +33,7 @@ const WidgetCard = ({
           borderRadius: '50%',
         })}
       >
-        <Icon name={iconName} />
+        <Icon name={iconName} color={iconColor} />
       </Box>
       <Box>
         <Typography variant='h4' fontWeight='500' textAlign='center'>

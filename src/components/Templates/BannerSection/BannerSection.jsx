@@ -46,12 +46,14 @@ const BannerSection = () => {
             title='Immigration'
             description=' Lorem ipsum, dolor sit amet consectetur adipisicing elit.'
             background='#E6F9FF'
+            iconColor='#4A3DB8'
           />
           <WidgetCard
             iconName='propartyIcon'
             title='Proparty'
             description=' Lorem ipsum, dolor sit amet consectetur adipisicing elit.'
             background='#FEF2E9'
+            iconColor='#20ACB6'
           />
         </Box>
         <Box

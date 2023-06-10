@@ -118,13 +118,13 @@ const Hero = ({ bgimage, roundedImage, buttonLabel }) => {
               title='Lorem ipsum dolor'
               description='Lorem ipsum dolor sit amet consectetur '
               iconName='editIcon'
-              iconColor='#FF9A61'
+              iconColor=' #FF385C'
             />
             <Widget
               title='Lorem ipsum dolor'
               description='Lorem ipsum dolor sit amet consectetur '
               iconName='videoIcon'
-              iconColor='#FF9A61'
+              iconColor='#239FDB'
             />
           </Stack>
         </Box>

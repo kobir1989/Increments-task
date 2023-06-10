@@ -58,7 +58,7 @@ const ContractSection = () => {
       <StyledUl>
         <StyledItem>
           <StyledSpan background='#a398e4a4'>
-            <Icon name='clockIcon' />
+            <Icon name='clockIcon' color='#6B5AD0' />
           </StyledSpan>
           Save Time and Money
         </StyledItem>
@@ -70,7 +70,7 @@ const ContractSection = () => {
         </StyledItem>
         <StyledItem>
           <StyledSpan background='#B4F3F6'>
-            <Icon name='clockIcon' />
+            <Icon name='justiceIcon' color='#1AA260' />
           </StyledSpan>
           Private and Confidential calls
         </StyledItem>

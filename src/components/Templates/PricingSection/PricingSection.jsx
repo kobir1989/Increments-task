@@ -3,6 +3,12 @@ import { Box, Stack, Typography } from '@mui/material';
 import Icon from '../../Atoms/Icons/Icon';
 import MuiTab from '../../Organisms/MuiTab/MuiTab';
 
+const StyledSection = styled('section')({
+  maxWidth: '1280px',
+  margin: 'auto',
+  padding: '0 2rem',
+});
+
 const StyledText = styled('span')({
   fontWeight: '300',
   color: '#425066',
@@ -38,7 +44,7 @@ const StyledSpan = styled('span')(({ background }) => ({
 
 const PricingSection = () => {
   return (
-    <section>
+    <StyledSection>
       <Box mb='4rem' textAlign='center'>
         <Typography
           variant='h2'
@@ -51,7 +57,7 @@ const PricingSection = () => {
         </Typography>
       </Box>
 
-      <Stack direction='row' justifyContent='space-around'>
+      <Stack direction='row' justifyContent='space-between'>
         <Box sx={{ maxWidth: '22rem' }}>
           <Typography
             variant='h4'
@@ -95,7 +101,7 @@ const PricingSection = () => {
           <MuiTab />
         </Box>
       </Stack>
-    </section>
+    </StyledSection>
   );
 };
 

@@ -6,7 +6,10 @@ import Chip from '../../Atoms/Chip/Chip';
 
 const StyledSection = styled('section')({
   display: 'flex',
-  justifyContent: 'space-around',
+  justifyContent: 'space-between',
+  maxWidth: '1280px',
+  margin: 'auto',
+  padding: '0 2rem',
 });
 const StyledUl = styled('ul')({
   display: 'flex',

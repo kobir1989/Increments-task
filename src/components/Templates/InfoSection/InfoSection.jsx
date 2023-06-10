@@ -4,7 +4,9 @@ import InfoCard from '../../Molicules/Cards/InfoCard';
 import Button from '../../Atoms/Button/Button';
 
 const StyledSection = styled('section')({
-  padding: '0 4.5rem',
+  maxWidth: '1280px',
+  margin: 'auto',
+  padding: '0 2rem',
 });
 
 const StyledSpan = styled('span')({
@@ -28,7 +30,7 @@ const InfoSection = () => {
         </Typography>
       </Box>
       <Stack pt='3rem' maxWidth={'1500px'} margin='auto'>
-        <Grid container justifyContent='center' alignItems='center'>
+        <Grid container>
           <Grid
             item
             xs={4}

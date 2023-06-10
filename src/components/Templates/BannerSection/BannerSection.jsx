@@ -4,11 +4,12 @@ import { Box, Stack, Typography } from '@mui/material';
 import WidgetCard from '../../Molicules/Widgets/WidgetCard';
 
 const StyledSection = styled('section')({
-  maxWidth: '1400px',
+  maxWidth: '1280px',
   margin: 'auto',
   display: 'flex',
   gap: '8.62rem',
   alignItems: 'center',
+  padding: '0 2rem',
 });
 
 const StyledSpan = styled('span')(({ theme }) => ({
@@ -20,7 +21,7 @@ const StyledSpan = styled('span')(({ theme }) => ({
 const BannerSection = () => {
   return (
     <StyledSection>
-      <Stack maxWidth='30rem' padding={'0 2.18rem'} gap={3}>
+      <Stack maxWidth='30rem' gap={3} marginTop='-2rem'>
         <Typography
           variant='h1'
           fontFamily='Poppins'
@@ -33,11 +34,12 @@ const BannerSection = () => {
         <Typography variant='body1' fontFamily='Poppins' color='#425066'>
           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur
           debitis odio dolores animi natus dolor eaque itaque adipisci dolore
-          ipsa!
+          ipsa! natus dolor eaque itaque adipisci dolore animi natus dolor eaque
+          itaque adipisci dolore
         </Typography>
       </Stack>
 
-      <Stack direction='row' gap='1.25rem' mt='-4rem' zIndex={10}>
+      <Stack direction='row' gap='1.25rem' mt='-7rem' zIndex={10}>
         <Box sx={{ display: 'flex', flexDirection: 'column', gap: '1.25rem' }}>
           <WidgetCard
             iconName='immigrationIcon'

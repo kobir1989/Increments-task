@@ -5,6 +5,7 @@ import styled from '@emotion/styled';
 import { useState } from 'react';
 import Icon from '../../Atoms/Icons/Icon';
 import SocialIconsGroup from '../../Molicules/SocialIconsGroup/SocialIconsGroup';
+import Footer from '../../Organisms/Footer/Footer';
 
 const StyledNav = styled('nav')({
   position: 'fixed',
@@ -80,6 +81,7 @@ const Layout = ({ children }) => {
         </Box>
         {children}
       </StyledMain>
+      <Footer />
     </>
   );
 };

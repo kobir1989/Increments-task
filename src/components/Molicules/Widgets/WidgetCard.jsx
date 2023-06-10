@@ -18,6 +18,7 @@ const WidgetCard = ({
         padding: '0.81rem  1.06rem',
         boxShadow: ' 0px 0px 6.93953px rgba(10, 116, 243, 0.25)',
         width: '16.37rem',
+        borderRadius: '4px',
       }}
     >
       <Box

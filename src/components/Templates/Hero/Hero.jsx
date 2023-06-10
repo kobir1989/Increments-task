@@ -5,7 +5,7 @@ import Button from '../../Atoms/Button/Button';
 
 const StyledSection = styled('section')(({ theme, bgimage }) => ({
   backgroundImage: `url(${bgimage})`,
-  height: '90vh',
+  height: '80vh',
   backgroundRepeat: 'no-repeat',
   backgroundPosition: 'top center',
   backgroundSize: '100vw',

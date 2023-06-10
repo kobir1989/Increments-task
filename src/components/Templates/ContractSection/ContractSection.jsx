@@ -105,7 +105,7 @@ const ContractSection = () => {
         <Box sx={{ position: 'absolute', right: '-17.6rem', bottom: '2rem' }}>
           <Chip color='#FF385C' text='Documentation' iconName='editIcon' />
         </Box>
-        <Box sx={{ position: 'absolute', left: '0', bottom: '0' }}>
+        <Box sx={{ position: 'absolute', left: '2rem', bottom: '-8rem' }}>
           <Chip color='#1AA260' text='Video Call' iconName='videoIcon' />
         </Box>
       </StyledUl>

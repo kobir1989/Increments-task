@@ -6,6 +6,7 @@ import 'slick-carousel/slick/slick-theme.css';
 import BannerSection from '../components/Templates/BannerSection/BannerSection';
 import { Divider } from '@mui/material';
 import ContractSection from '../components/Templates/ContractSection/ContractSection';
+import PricingSection from '../components/Templates/PricingSection/PricingSection';
 
 const Home = () => {
   const settings = {
@@ -41,6 +42,8 @@ const Home = () => {
       <BannerSection />
       <Divider sx={{ mt: 8, mb: 8 }} />
       <ContractSection />
+      <Divider sx={{ mt: 20, mb: 8 }} />
+      <PricingSection />
     </Layout>
   );
 };

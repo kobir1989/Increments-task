@@ -24,6 +24,9 @@ import linkedIn from './svg/linkedIn';
 import instagram from './svg/instagram';
 import AddIcon from '@mui/icons-material/Add';
 import clockIcon from './svg/clockIcon';
+import justiceIcon from './svg/justiceIcon';
+import starIcon from './svg/starIcon';
+import checkedIcon from './svg/checkedIcon';
 
 export const IconsMap = {
   arrowBack,
@@ -52,4 +55,7 @@ export const IconsMap = {
   twitter,
   addIcon: AddIcon,
   clockIcon,
+  justiceIcon,
+  starIcon,
+  checkedIcon,
 };

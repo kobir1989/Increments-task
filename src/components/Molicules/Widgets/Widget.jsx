@@ -2,7 +2,7 @@ import React from 'react';
 import { Box, Stack, Typography } from '@mui/material';
 import Icon from '../../Atoms/Icons/Icon';
 
-const Widget = ({ title, description, iconName = 'callIcon' }) => {
+const Widget = ({ title, description, iconName = 'callIcon', iconColor }) => {
   return (
     <Stack
       direction='row'
@@ -17,7 +17,7 @@ const Widget = ({ title, description, iconName = 'callIcon' }) => {
       })}
     >
       <Box>
-        <Icon name={iconName} />
+        <Icon name={iconName} color={iconColor} />
       </Box>
       <Box>
         <Typography variant='body1' fontWeight='400'>

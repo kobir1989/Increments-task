@@ -1,6 +1,6 @@
 export const typography = {
   h1: {
-    fontSize: '3rem', // 48px
+    fontSize: '4rem', // 48px
     lineHeight: '4.5rem',
     fontWeight: '600',
     '@media (max-width: 992px)': {

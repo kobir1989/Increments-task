@@ -3,19 +3,23 @@ import { Avatar, Box, Stack, Typography } from '@mui/material';
 import Widget from '../../Molicules/Widgets/Widget';
 import Button from '../../Atoms/Button/Button';
 
-const StyledSection = styled('section')(({ bgimage }) => ({
+const StyledSection = styled('section')(({ theme, bgimage }) => ({
   backgroundImage: `url(${bgimage})`,
-  height: '100vh',
+  height: '90vh',
   backgroundRepeat: 'no-repeat',
   backgroundPosition: 'top center',
   backgroundSize: '100vw',
+  position: 'relative',
+  [theme.breakpoints.up('xxxl')]: {
+    height: '110vh',
+  },
 }));
 
 const Hero = ({ bgimage, roundedImage, buttonLabel }) => {
   return (
     <StyledSection bgimage={bgimage}>
       <Stack
-        pt='7.37rem'
+        pt='10.37rem'
         direction='row'
         width='100%'
         justifyContent='space-between'
@@ -85,6 +89,7 @@ const Hero = ({ bgimage, roundedImage, buttonLabel }) => {
             alignItems: 'center',
             justifyContent: 'center',
             position: 'relative',
+            mr: '2%',
           }}
         >
           <img
@@ -107,16 +112,19 @@ const Hero = ({ bgimage, roundedImage, buttonLabel }) => {
               title='Lorem ipsum dolor'
               description='Lorem ipsum dolor sit amet consectetur '
               iconName='callIcon'
+              iconColor='#FF9A61'
             />
             <Widget
               title='Lorem ipsum dolor'
               description='Lorem ipsum dolor sit amet consectetur '
               iconName='editIcon'
+              iconColor='#FF9A61'
             />
             <Widget
               title='Lorem ipsum dolor'
               description='Lorem ipsum dolor sit amet consectetur '
               iconName='videoIcon'
+              iconColor='#FF9A61'
             />
           </Stack>
         </Box>

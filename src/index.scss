@@ -50,3 +50,49 @@ p {
 textarea {
   resize: none;
 }
+
+.hero_section_slider_dots {
+  padding: 2.68rem 0;
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  gap: 0.65rem;
+  position: absolute;
+  bottom: 25%;
+  left: 50%;
+  transform: translate(-50%, -25%);
+  list-style: none;
+
+  li {
+    button {
+      font-size: 0;
+      border: none;
+      background-color: transparent;
+      cursor: pointer;
+      &::before {
+        display: inline-block;
+        content: '';
+        width: 2rem;
+        height: 5px;
+        border-radius: 2px;
+        transition: all 0.2s linear 0s;
+      }
+    }
+  }
+
+  li {
+    button {
+      &::before {
+        background-color: #d9d9d9;
+      }
+    }
+  }
+
+  .slick-active {
+    button {
+      &::before {
+        background-color: #ff385c;
+      }
+    }
+  }
+}

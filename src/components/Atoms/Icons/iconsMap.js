@@ -18,6 +18,12 @@ import addAccount from './svg/addAccount';
 import logout from './svg/logout';
 import settings from './svg/settings';
 import myAccount from './svg/myAccount';
+import twitter from './svg/twitter';
+import facebook from './svg/facebook';
+import linkedIn from './svg/linkedIn';
+import instagram from './svg/instagram';
+import AddIcon from '@mui/icons-material/Add';
+import clockIcon from './svg/clockIcon';
 
 export const IconsMap = {
   arrowBack,
@@ -40,4 +46,10 @@ export const IconsMap = {
   settings,
   logout,
   myAccount,
+  linkedIn,
+  instagram,
+  facebook,
+  twitter,
+  addIcon: AddIcon,
+  clockIcon,
 };

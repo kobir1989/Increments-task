@@ -2,8 +2,8 @@ import { Stack, Box, Typography } from '@mui/material';
 import React from 'react';
 import Icon from '../../Atoms/Icons/Icon';
 
-const WidgetsCard = ({
-  iconName = 'iconName',
+const WidgetCard = ({
+  iconName,
   title,
   description,
   background = '#FFEBE6',
@@ -45,4 +45,4 @@ const WidgetsCard = ({
   );
 };
 
-export default WidgetsCard;
+export default WidgetCard;

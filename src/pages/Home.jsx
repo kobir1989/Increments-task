@@ -3,7 +3,9 @@ import Layout from '../components/Templates/Layout/Layout';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
-import { Box } from '@mui/material';
+import BannerSection from '../components/Templates/BannerSection/BannerSection';
+import { Divider } from '@mui/material';
+import ContractSection from '../components/Templates/ContractSection/ContractSection';
 
 const Home = () => {
   const settings = {
@@ -15,28 +17,30 @@ const Home = () => {
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 2000,
+    dotsClass: 'hero_section_slider_dots',
   };
   return (
     <Layout>
-      <Box>
-        <Slider {...settings}>
-          <Hero
-            bgimage='/assets/svg/cover1.svg'
-            roundedImage='/assets/svg/cover1-rounded.svg'
-            buttonLabel='View Lawyer Profile'
-          />
-          <Hero
-            bgimage='/assets/svg/cover2.svg'
-            roundedImage='/assets/svg/cover2-rounded.svg'
-            buttonLabel='Talk to Lawyer'
-          />
-          <Hero
-            bgimage='/assets/svg/cover3.svg'
-            roundedImage='/assets/svg/cover3-rounded.svg'
-            buttonLabel='View Lawyer Profile'
-          />
-        </Slider>
-      </Box>
+      <Slider {...settings}>
+        <Hero
+          bgimage='/assets/svg/cover1.svg'
+          roundedImage='/assets/svg/cover1-rounded.svg'
+          buttonLabel='View Lawyer Profile'
+        />
+        <Hero
+          bgimage='/assets/svg/cover2.svg'
+          roundedImage='/assets/svg/cover2-rounded.svg'
+          buttonLabel='Talk to Lawyer'
+        />
+        <Hero
+          bgimage='/assets/svg/cover3.svg'
+          roundedImage='/assets/svg/cover3-rounded.svg'
+          buttonLabel='View Lawyer Profile'
+        />
+      </Slider>
+      <BannerSection />
+      <Divider sx={{ mt: 8, mb: 8 }} />
+      <ContractSection />
     </Layout>
   );
 };

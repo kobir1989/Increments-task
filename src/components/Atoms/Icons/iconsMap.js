@@ -27,6 +27,8 @@ import clockIcon from './svg/clockIcon';
 import justiceIcon from './svg/justiceIcon';
 import starIcon from './svg/starIcon';
 import checkedIcon from './svg/checkedIcon';
+import noteIcon from './svg/noteIcon';
+import houseIcon from './svg/houseIcon';
 
 export const IconsMap = {
   arrowBack,
@@ -58,4 +60,6 @@ export const IconsMap = {
   justiceIcon,
   starIcon,
   checkedIcon,
+  noteIcon,
+  houseIcon,
 };

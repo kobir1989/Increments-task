@@ -7,6 +7,7 @@ import BannerSection from '../components/Templates/BannerSection/BannerSection';
 import { Divider } from '@mui/material';
 import ContractSection from '../components/Templates/ContractSection/ContractSection';
 import PricingSection from '../components/Templates/PricingSection/PricingSection';
+import InfoSection from '../components/Templates/InfoSection/InfoSection';
 
 const Home = () => {
   const settings = {
@@ -44,6 +45,9 @@ const Home = () => {
       <ContractSection />
       <Divider sx={{ mt: 20, mb: 8 }} />
       <PricingSection />
+      <Divider sx={{ mt: 8, mb: 8 }} />
+      <InfoSection />
+      <Divider sx={{ mt: 4, mb: 8 }} />
     </Layout>
   );
 };

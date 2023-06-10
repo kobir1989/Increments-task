@@ -1,6 +1,6 @@
 import { Box, Tab, Tabs } from '@mui/material';
 import { useState } from 'react';
-import PricingDetails from '../../../Molicules/PricingDetails/PricingDetails';
+import PricingDetails from '../../Molicules/PricingDetails/PricingDetails';
 import { TabPanel } from './TabPanel';
 
 const MuiTab = () => {

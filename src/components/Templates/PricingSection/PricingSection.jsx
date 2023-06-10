@@ -1,9 +1,8 @@
 import styled from '@emotion/styled';
 import { Box, Stack, Typography } from '@mui/material';
 import Icon from '../../Atoms/Icons/Icon';
-import MuiTab from '../../Organisms/Navigation/MuiTab/MuiTab';
+import MuiTab from '../../Organisms/MuiTab/MuiTab';
 
-const StyledSection = styled('section')({});
 const StyledText = styled('span')({
   fontWeight: '300',
   color: '#425066',
@@ -39,7 +38,7 @@ const StyledSpan = styled('span')(({ background }) => ({
 
 const PricingSection = () => {
   return (
-    <StyledSection>
+    <section>
       <Box mb='4rem' textAlign='center'>
         <Typography
           variant='h2'
@@ -96,7 +95,7 @@ const PricingSection = () => {
           <MuiTab />
         </Box>
       </Stack>
-    </StyledSection>
+    </section>
   );
 };
 
